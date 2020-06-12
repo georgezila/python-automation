@@ -41,20 +41,20 @@ DON'T FORGET TO IMPORT "time"
 (disclaimer i didn't write this but I couldn't find the person who did )
 
 
-**toolbar_width = 77  
+**toolbar_width = 77**
 
 **setup toolbar
 sys.stdout.write("[%s]" % (" " * toolbar_width))
 sys.stdout.flush()
-sys.stdout.write("\b" * (toolbar_width+1)) 
+sys.stdout.write("\b" * (toolbar_width+1))** 
 
 **for i in xrange(toolbar_width):
     time.sleep(0.03)
     # update the bar
     sys.stdout.write("-")
-    sys.stdout.flush()
+    sys.stdout.flush()**
 
-**sys.stdout.write("]\n")
+**sys.stdout.write("]\n")**
 
 
 DON'T FORGET TO IMPORT "sys"
