@@ -40,21 +40,22 @@ DON'T FORGET TO IMPORT "time"
 ## this is a quick loading bar 
 (disclaimer i didn't write this but I couldn't find the person who did )
 
---------------------------------------------------------------------------------
-toolbar_width = 77  #change the toolbar width to whatever suits you
 
-setup toolbar
+**toolbar_width = 77  
+
+**setup toolbar
 sys.stdout.write("[%s]" % (" " * toolbar_width))
 sys.stdout.flush()
-sys.stdout.write("\b" * (toolbar_width+1)) # return to start of line, after '['
+sys.stdout.write("\b" * (toolbar_width+1)) 
 
-for i in xrange(toolbar_width):
+**for i in xrange(toolbar_width):
     time.sleep(0.03)
     # update the bar
     sys.stdout.write("-")
     sys.stdout.flush()
 
-sys.stdout.write("]\n") # this ends the progress bar
+**sys.stdout.write("]\n")
+
 
 DON'T FORGET TO IMPORT "sys"
-
+change the toolbar width to whatever suits you
